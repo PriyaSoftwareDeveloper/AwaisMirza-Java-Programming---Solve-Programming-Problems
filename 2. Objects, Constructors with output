@@ -1,0 +1,33 @@
+Class 1:
+
+package OOP;
+
+public class Main {
+	public static void main(String[] args) {
+		Vehicle vehicle1 = new Vehicle();	//object
+		System.out.println(vehicle1.Color);
+		
+		Vehicle vehicle2 = new Vehicle("honda civic", "black", "2012", "honda");
+		System.out.println(vehicle2.Color);		
+	}
+}
+
+Class 2:
+
+package OOP;
+
+public class Vehicle {
+	public String Name = "";
+	public String Color = "";
+	public String Model = "";
+	public String Company = "";
+	
+	public Vehicle() {}	//constructor - name of constructor same as name of class, doesnt have return type
+		
+		public Vehicle(String name, String color, String model, String company) {
+			this.Name = name; // this means that public class Vehicle..
+			this.Color = color;
+			this.Model = model;
+			this.Company = company;			
+		}
+}
